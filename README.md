@@ -79,6 +79,8 @@ git clone https://github.com/tanjinarahmanprova/web-automation-for-rokomari.com.
 mvn test
 ```
 
+## Video Recording of Project
+https://github.com/tanjinarahmanprova/web-automation-for-rokomari.com/assets/129376867/78861f17-c5c6-480e-b49a-62183f504bb3
 
 
 ### Work Description
