@@ -26,6 +26,7 @@ This repository contains a web automation project for Rokomari.com. The project 
     - [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
     - [Spring Tools](https://spring.io/tools)
 - [Apache Maven](https://maven.apache.org/download.cgi)
+- [Allure](https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.29.0/)
 - [Chrome for Testing](https://googlechromelabs.github.io/chrome-for-testing/)
 
 ## Installation and Setup
