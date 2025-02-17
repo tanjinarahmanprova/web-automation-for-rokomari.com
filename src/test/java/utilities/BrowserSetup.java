@@ -25,8 +25,8 @@ public class BrowserSetup {
     public WebDriver getBrowser(String browserName){
         if(browserName.equalsIgnoreCase("Chrome")){
             ChromeOptions chromeOptions = new ChromeOptions();
-            chromeOptions.setBinary("D:\\_SQA_\\Web Automation\\chrome-win64\\chrome.exe");
-            chromeOptions.addArguments("user-data-dir=C:\\Users\\user\\AppData\\Local\\Google\\Chrome for Testing\\User Data");
+            chromeOptions.setBinary("C:\\chrome-win64\\chrome.exe");
+            chromeOptions.addArguments("user-data-dir=C:\\Users\\OS\\AppData\\Local\\Google\\Chrome for Testing\\User Data");
             return new ChromeDriver(chromeOptions);
         }
         else if (browserName.equalsIgnoreCase("Firefox")) {

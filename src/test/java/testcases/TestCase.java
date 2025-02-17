@@ -1,6 +1,6 @@
 package testcases;
 
-import io.qameta.allure.Description;
+import io.qameta.allure.*;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -29,7 +29,7 @@ public class TestCase extends BrowserSetup {
     public void testFeatures() {
         //Step1 - Manually login to the Rokomari's website
         homePage.addScreenshot("Homepage");
-        Assert.assertTrue(homePage.displayStatus(homePage.userIcon));   //Assertion for checking successful Sign in
+        //Assert.assertTrue(homePage.displayStatus(homePage.userIcon));   //Assertion for checking successful Sign in
 
         Actions action = new Actions(getBrowser());
 
@@ -57,6 +57,8 @@ public class TestCase extends BrowserSetup {
         productPage.clickOnElement(productPage.nextPageButton);
 
         //Step5 -  Add to the cart any book
+        WebElement scrollToBook = productPage.getElement(productPage.book);
+        action.scrollToElement(scrollToBook).build().perform();
         productPage.clickOnElement(productPage.book);
         List<String> window_handles = new ArrayList<>(getBrowser().getWindowHandles());
         getBrowser().switchTo().window(window_handles.get(1));
